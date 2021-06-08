@@ -1,0 +1,15 @@
+# 71200595 Gerry Sunjay Junjung
+# KASUS: Mencari Email dan NIM dari data mahasiswa sebagai berikut:
+# Gerry berusia 18 tahun dengan nim 71200595 dan email gerry@gmail.com,
+# Ahong berusia 18 tahun dengan nim 71200617 dan email ahong@gmail.com, 
+# Bimo berusia 18 tahun dengan nim 71200612 dan email bimo@gmail.com, 
+# Adi berusia 18 tahun dengan nim 71200574 dan email daniel@gmail.com
+# Gerry berusia 18 tahun dengan nim 71200595 dan email gerry@gmail.com, Ahong berusia 18 tahun dengan nim 71200617 dan email ahong@gmail.com, Bimo berusia 18 Tahun dengan nim 71200612 dan email bimo@gmail.com, Adi berusia 18 Tahun dengan nim 71200574 Email daniel@gmail.com
+import re
+def email_nim(masukkan):
+    email = re.findall('\w+@\w+.com',masukkan)
+    nim = re.findall('\d+\d+\d',masukkan)
+    print (nim)
+    print (email)
+masukkan = str(input('CoPas/Masukkan Data: '))
+email_nim(masukkan)
